@@ -1,43 +1,40 @@
 header {
   background-color: blue;
-  padding: 12px; /* Equivale a ~32px según el root font-size */
-  font-size: 17px; /* Escalable */
-  border-radius: 0 0 18% 18%; /* 70px */
+  padding: 12px 2rem; /* Padding horizontal mayor para que no quede pegado */
+  font-size: 17px;
+  border-radius: 0 0 18% 18%;
   box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
-
-  /* NUEVO: hacer el header fijo */
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 999;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4), 0 0 25px rgba(0, 0, 255, 0.2); /* Sombra en texto */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4), 0 0 25px rgba(0, 0, 255, 0.2);
 }
 
-/* Espacio debajo del header para evitar que se sobreponga */
 main {
-  margin-top: 80px; /* Ajusta si tu header es más alto */
+  margin-top: 80px; /* Ajustar si el header crece */
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
   color: black;
-  padding: 1rem;
-  width: auto;
-  font-weight: bold; /* Aumentar el peso de la fuente para el efecto 3D */
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4), 0 0 25px rgba(0, 0, 255, 0.2); /* Efecto 3D */
+  padding: 1rem 2rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4), 0 0 25px rgba(0, 0, 255, 0.2);
+  width: 100%;
 }
 
 nav {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between; /* Para que los items queden a lados opuestos */
   align-items: center;
-  gap: 2rem;
-  font-size: 1.2rem; /* Aumento de tamaño para visibilidad */
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3), 0 0 15px rgba(0, 0, 255, 0.3); /* Efecto 3D */
+  width: 100%;
+  font-size: 1rem;
+  gap: 1.5rem; /* Espacio entre links */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3), 0 0 15px rgba(0, 0, 255, 0.3);
 }
 
 .nav-container {
@@ -47,63 +44,73 @@ nav {
   width: 100%;
 }
 
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* Espacio entre nombre y botón */
+}
+
 .navlink {
-  position: relative;
   color: white;
   text-decoration: none;
-  padding: 10px;
-  font-weight: bold; /* Puedes ajustar el peso de la fuente si lo deseas */
+  padding: 1px 60px; /* Padding para que no estén pegados */
+  font-weight: bold;
+  position: relative;
 }
 
 .navlink::after {
   content: '';
   position: absolute;
-  bottom: -5px; /* Ajusta la distancia de la línea respecto al texto */
+  bottom: -5px;
   left: 0;
   width: 0;
   height: 3px;
-  background-color: #f39c12; /* Color de la línea */
-  transition: width 0.3s ease; /* Transición suave */
+  background-color: #f39c12;
+  transition: width 0.3s ease;
 }
 
 .navlink:hover::after {
-  width: 100%; /* La línea se expande cuando el mouse está encima */
+  width: 100%;
 }
 
-.cerrar-sesion,
-.iniciar-sesion {
-  margin-left: auto;
-  color: white;
-  text-decoration: none;
+.usuario-nombre {
   font-weight: bold;
-  font-size: 15px;
-  padding-right: 2cm;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Efecto 3D en enlaces */
+  color: #fff;
+  padding-right: 0.5rem;
+  white-space: nowrap;
 }
 
-.cerrar-sesion:hover,
-.iniciar-sesion:hover {
-  color: #f1f1f1;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4), 0 0 25px rgba(0, 0, 255, 0.2); /* Efecto al pasar */
+.btn-cerrar-sesion {
+  background: transparent;
+  border: 1.5px solid #f39c12;
+  color: #f39c12;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.logo-container {
-  display: flex;
-  align-items: center;
-  padding: 1rem;
+.btn-cerrar-sesion:hover {
+  background-color: #f39c12;
+  color: blue;
 }
 
 .logo {
-  width: clamp(40px, 5vw, 20px);
-  height: clamp(40px, 5vw, 20px);
-  padding-left: 1.8cm;
+  width: clamp(30px, 5vw, 50px);
+  height: clamp(30px, 5vw, 50px);
+  padding-left: 1.5rem;
 }
 
 .dropdown {
   position: relative;
-  display: inline-block;
-  font-weight: bold; /* Aumentar el peso de la fuente para el efecto 3D */
-
+  font-weight: bold;
 }
 
 .dropdown-content {
@@ -112,43 +119,43 @@ nav {
   background-color: rgb(246, 246, 246);
   min-width: 8rem;
   box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
-  padding: 2rem;
+  padding: 1rem 1.5rem;
   z-index: 100;
   flex-direction: column;
-  gap: 2rem;
-  border-radius: 10% 10% 10% 10%;
-  font-weight: bold; /* Aumentar el peso de la fuente para el efecto 3D */
-
+  gap: 1rem;
+  border-radius: 10%;
+  font-weight: bold;
 }
 
 .dropdown:hover .dropdown-content {
   display: flex;
-  flex-direction: column;
-}
-
-.dropdown-btn {
-  cursor: pointer;
-  font-weight: normal;
-  font-size: 1rem;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Efecto 3D */
 }
 
 .dropdown-content a {
   color: black;
   text-decoration: none;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Efecto 3D en enlaces */
+  padding: 0.25rem 0;
 }
 
 .dropdown-content a:hover {
   background-color: #1a74fb;
-  padding: 0rem;
   color: white;
-  border-radius: 10% 10% 10% 10%;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4), 0 0 25px rgba(0, 0, 255, 0.2); /* Efecto 3D al pasar */
+  border-radius: 10%;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4), 0 0 25px rgba(0, 0, 255, 0.2);
 }
 
 @media (max-width: 768px) {
-  .header {
-    padding: 0.625rem; /* ~10px */
+  header {
+    padding: 10px 1rem;
+  }
+  .nav-left,
+  .nav-right {
+    gap: 1rem;
+  }
+  .logo {
+    padding-left: 1rem;
+  }
+  nav {
+    gap: 1rem;
   }
 }

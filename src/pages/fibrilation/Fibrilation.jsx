@@ -116,24 +116,7 @@ const Fibrilation = () => {
           style={{ width: "100%", height: "300px" }}
           environment-image="https://modelviewer.dev/shared-assets/environments/spruit_sunrise_1k_HDR.jpg"
         ></model-viewer>
-        {/* TEXTO 2D superpuesto */}
-        <div
-          className="scroll-text-3d"
-          style={{
-            position: "absolute",
-            top: "20px", // Coloca el div a 20px del borde inferior del padre.
-            left: "18%", // Mueve el borde izquierdo del div al 50% del ancho del padre.
-            transform: "translateX(-50%)", // Centra el div horizontalmente, corrigiendo el "left: 50%".
-            color: "white",
-            background: "rgba(0,0,0,0.5)",
-            padding: "20px 10px",
-            borderRadius: "5px",
-            zIndex: 10, // Opcional, para asegurar que esté por encima de otros elementos.
-            whiteSpace: "nowrap", // Opcional, para evitar que el texto se divida en varias líneas.
-          }}
-        >
-          navegación por teclado ↑ ← ↓ →
-        </div>
+
         <div className="cards-text scroll-3d">
           <h2 className="scroll-3d">¿Qué es la Fibrilacion?</h2>
           <p className="scroll-3d">
@@ -162,24 +145,7 @@ const Fibrilation = () => {
           style={{ width: "100%", height: "300px" }}
           environment-image="https://modelviewer.dev/shared-assets/environments/spruit_sunrise_1k_HDR.jpg"
         ></model-viewer>
-        {/* TEXTO 2D superpuesto */}
-        <div
-          className="scroll-text-3d"
-          style={{
-            position: "absolute",
-            top: "20px", // Coloca el div a 20px del borde inferior del padre.
-            left: "18%", // Mueve el borde izquierdo del div al 50% del ancho del padre.
-            transform: "translateX(-50%)", // Centra el div horizontalmente, corrigiendo el "left: 50%".
-            color: "white",
-            background: "rgba(0,0,0,0.5)",
-            padding: "20px 10px",
-            borderRadius: "5px",
-            zIndex: 10, // Opcional, para asegurar que esté por encima de otros elementos.
-            whiteSpace: "nowrap", // Opcional, para evitar que el texto se divida en varias líneas.
-          }}
-        >
-          navegación por teclado ↑ ← ↓ →
-        </div>
+
         <div className="cards-text">
           <h2>Síntomas</h2>
           <p>
@@ -207,24 +173,7 @@ const Fibrilation = () => {
           style={{ width: "100%", height: "300px" }}
           environment-image="https://modelviewer.dev/shared-assets/environments/spruit_sunrise_1k_HDR.jpg"
         ></model-viewer>
-        {/* TEXTO 2D superpuesto */}
-        <div
-          className="scroll-text-3d"
-          style={{
-            position: "absolute",
-            top: "20px", // Coloca el div a 20px del borde inferior del padre.
-            left: "18%", // Mueve el borde izquierdo del div al 50% del ancho del padre.
-            transform: "translateX(-50%)", // Centra el div horizontalmente, corrigiendo el "left: 50%".
-            color: "white",
-            background: "rgba(0,0,0,0.5)",
-            padding: "20px 10px",
-            borderRadius: "5px",
-            zIndex: 10, // Opcional, para asegurar que esté por encima de otros elementos.
-            whiteSpace: "nowrap", // Opcional, para evitar que el texto se divida en varias líneas.
-          }}
-        >
-          navegación por teclado ↑ ← ↓ →
-        </div>
+
         <div className="cards-text">
           <h2>Tratamiento</h2>
           <p>
@@ -252,24 +201,7 @@ const Fibrilation = () => {
           style={{ width: "100%", height: "300px" }}
           environment-image="https://modelviewer.dev/shared-assets/environments/spruit_sunrise_1k_HDR.jpg"
         ></model-viewer>
-        {/* TEXTO 2D superpuesto */}
-        <div
-          className="scroll-text-3d"
-          style={{
-            position: "absolute",
-            top: "20px", // Coloca el div a 20px del borde inferior del padre.
-            left: "18%", // Mueve el borde izquierdo del div al 50% del ancho del padre.
-            transform: "translateX(-50%)", // Centra el div horizontalmente, corrigiendo el "left: 50%".
-            color: "white",
-            background: "rgba(0,0,0,0.5)",
-            padding: "20px 10px",
-            borderRadius: "5px",
-            zIndex: 10, // Opcional, para asegurar que esté por encima de otros elementos.
-            whiteSpace: "nowrap", // Opcional, para evitar que el texto se divida en varias líneas.
-          }}
-        >
-          navegación por teclado ↑ ← ↓ →
-        </div>
+
         <div className="cards-text">
           <h2>Prevención y autocuidado</h2>
           <p>
